@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-first-part{
+    /* border: 5px solid red; */
+    display: grid;
+    grid: auto/repeat(12, 1fr);
+    height: 30vh;
+    /* margin-bottom: 30px; */
+    padding-bottom: 30px;
+}
+.header-first-part nav{
+    grid-column: 1/span 1;
+    grid-row: 2/ span 1;
+}
+.header-first-part form{
+    grid-column: 2/span 1;
+    grid-row: 2/ span 1;
+    /* width: 10%;
+    height: 10vh;
+    background-color: white; */
+    border: 1px solid white;
+}
+.header-first-part form input{
+    border: 1px solid white;
+}
+
+.header-first-part img{
+    grid-column: 5/span 3;
+    grid-row: 1/span 2;
+    width: 35vw;
+    height: 30vh;
+}
+.header-first-part button{
+    grid-column: 12/span 1;
+    grid-row: 2/ span 1;
+    background-color: white;
+    border: none;
+}
+.header-second-part{
+     border: 1px solid gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-second-part ul{
+   
+    display: flex;
+    flex-direction: row;
+  justify-content: space-evenly; 
+    align-items: center;
+    width: 30%;
+}
+
+.header-second-part ul li{
+    list-style: none;
+
+}
+.header-second-part ul li a{
+    text-decoration: none;
+    color: black;
+}
+.header-second-part ul li a:hover{
+    color: red;
+}
