@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Information</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <div>
+        <div class="header-first-part">
             <nav>
                 <ul>Menu
                     <li><a href="">Forside</a></li>
@@ -22,14 +24,16 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text">
             </form>
+            
             <img src="og_default.png" alt="Logo">
+
             <button>
                 Log ind 
                 <i class="fa-solid fa-user"></i>
             </button>
         </div>
 
-        <div>
+        <div class="header-second-part">
             <ul>
                 <li><a href="#">Nyhedsrbeve</a></li>
                 <li><a href="#">Podcast</a></li>
@@ -41,12 +45,13 @@
 
 
     <main>
-        <div>
+        <div class="announce">
             <div></div>
             <p>Announce</p>
         </div>
         
-        <section>
+        <section class="leading-article">
+           
             <aside>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum 
@@ -54,6 +59,7 @@
                      distinctio at.
                 </p>  
             </aside>
+
             <article>
                 <p>Abonnement <span>LæseTid: 7 Min.</span></p>
                 <h1>
@@ -71,27 +77,31 @@
 
 
 
-        <article>
-            <section>
+        <article class="udland">
+            <section class="udland-first-part">
                 <h5>Udland</h5>
                 <div>
                     <img src="https://picsum.photos/200/300?grayscale" alt="">
                     <h6>Jakob Stein</h6>
-                    <i class="fa-light fa-envelope">Email</i>
-                    <i class="fa-brands fa-square-twitter">Twitter</i>
+                    <i class="fa-regular fa-envelope"></i>Email
+                    <i class="fa-brands fa-square-twitter"></i>Twitter
                 </div>
+
                 <div>
                     Lorem, ipsum dolor.
-                    <i class="fa-light fa-envelope">Email</i>
+                    <i class="fa-regular fa-envelope"></i>Email
                 </div>
             </section>
 
 
-            <section>
+            <section class="udland-second-part">
                 <div>
-                    <p><i class="fa-thin fa-clock"></i>7. maj 2018</p>
+                    <p>
+                        <i class="fa-regular fa-clock"></i>7. maj 2018
+                        
+                    </p>
                     <button>
-                        <i class="fa-thin fa-comments">Kommenter(2)</i>
+                        <i class="fa-regular fa-comments"></i>Kommenter(2)
                     </button>
                 </div>
              
@@ -102,37 +112,43 @@
                       Repellat temporibus provident laudantium eaque itaque odio 
                       natus ad! Modi laborum rem voluptatum quidem alias, similique quam.
                 </p>
-            <div>
-              <button>
-                <i class="fa-brands fa-facebook"></i>
-                Del
-              </button>
-              <button>
-                <i class="fa-brands fa-square-twitter">Twitter</i>
-              </button>
-              <button>
-                <i class="fa-sharp fa-solid fa-at">Email</i>
-              </button>
-            </div>
-
+                <div class="social-media">
+                    <button>
+                        <i class="fa-brands fa-facebook"></i>
+                        Del
+                    </button>
+                    <button>
+                        <i class="fa-brands fa-square-twitter"></i>Twitter
+                    </button>
+                    <button>
+                        <i class="fa-sharp fa-solid fa-at"></i>Email
+                    </button>
+                </div>
             </section>
-            <h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h4> 
-            <button>Klikke her</button>
-            <p>Allerde Abonnement? <a href="">Log ind her</a></p>
+
+
+                <h4 class="topic">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h4> 
+                <button class="red-button">Klikke her</button>
+                <p class="log-in">Allerde Abonnement? <a href="">Log ind her</a></p>
+          
            
         </article>
 
 
-        <section>
-            <button>Fik du læst? <i class="fa-thin fa-compass"></i></button>
-            <div>
-                <i class="fa-sharp fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
+        <section class="articles">
+
+            <button class="articles-button">Fik du læst? <i class="fa-regular fa-compass"></i></button>
+            <div class="articles-div">
+                <i class="fa-solid fa-circle-arrow-left color"></i>
+                <i class="fa-sharp fa-solid fa-circle-arrow-right color"></i>
+                <!-- <i class="fa-sharp fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right"></i> -->
             </div>
-            <article>
-                <img src="https://picsum.photos/200/300?grayscale" alt="">
+
+            <article class="article-1">
+                <img class="image" src="https://picsum.photos/200/300?grayscale" alt="">
                 <h6>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                     Itaque facilis repellendus sed laborum eum minima adipisci
@@ -140,23 +156,23 @@
                 </h6>
             </article>
 
-            <article>
-                <img src="https://picsum.photos/200/300?grayscale" alt="">
+            <article class="article-2">
+                <img class="image" src="https://picsum.photos/200/300?grayscale" alt="">
                 <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                      Sint, voluptatibus.
                 </h6>
             </article>
 
-            <article>
-                <img src="https://picsum.photos/200/300?grayscale" alt="">
+            <article class="article-3">
+                <img class="image" src="https://picsum.photos/200/300?grayscale" alt="">
                 <h6>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia architecto aperiam,
                      fugiat tenetur assumenda expedita natus debitis ut vero ipsum.
                 </h6>
             </article>
 
-            <article>
-                <img src="https://picsum.photos/200/300?grayscale" alt="">
+            <article  class="article-4">
+                <img class="image" src="https://picsum.photos/200/300?grayscale" alt="">
                 <h6>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                      Alias dolor quos sequi et eos recusandae nulla nemo sunt
@@ -166,58 +182,64 @@
         </section>
 
 
-        <section>
-            <h5>Seneste nyt</h5>
-            <aside>
-                <div>
+        <section class="abonnement">
+            <h5 class="new-topic">Seneste nyt</h5>
+            <aside class="last-news">
+                <div class="last-news-div">
                     <p>lorem2</p>
                     <a href="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, consectetur?</a>
                 </div>
 
-                <div>
+                <div class="last-news-div">
                     <p>Lorem, ipsum.</p>
                     <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nesciunt.</a>
                 </div>
 
-                <div>
+                <div class="last-news-div">
                     <p>Lorem, ipsum.</p>
                     <a href="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, saepe!</a>
                 </div>
 
-                <div>
+                <div class="last-news-div">
                     <p>Lorem, ipsum.</p>
                     <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ipsa?</a>
                 </div>
 
-                <div>
+                <div class="last-news-div">
                     <p>Lorem, ipsum.</p>
                     <a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, veritatis.</a>
                 </div>
 
-                <div>
+                <div class="last-news-div">
                     <p>Lorem, ipsum.</p>
                     <a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, laboriosam?</a>
                 </div>
                 
-                <div>
+                <div class="last-news-div">
                     <a href="">Flere nyheder</a>
                 </div>
             </aside>
 
-            <article>
-                <h5>Information.dk</h5>
-                <h6><i class="fa-regular fa-house"></i>Forsid lige nu</h6>
+
+            <h5 class="information-dk">Information.dk</h5>
+            <h6 class="information-arrow">
+                <i class="fa-light fa-house"></i>
+                Forsid lige nu
+            </h6>
+
+            <article class="information article-11">
                 <img src="https://picsum.photos/200/300?grayscale" alt="">
                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Officia, repellat!</h5>
+                     Officia, repellat!
+                </h5>
             </article>
 
-            <article>
+            <article class="information article-12">
                 <img src="https://picsum.photos/200/300?grayscale" alt="">
                 <h5>Lorem ipsum dolor sit.</h5>
             </article>
 
-            <article>
+            <article class="information article-13">
                 <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Error necessitatibus rerum illo alias at doloremque!
@@ -225,14 +247,14 @@
                 </p>
             </article>
 
-            <article>
+            <article class="information article-14">
                 <h6>Abonnement</h6>
                 <img src="https://picsum.photos/200/300?grayscale" alt="">
                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Laborum, maxime?</h5>
             </article>
 
-            <article>
+            <article class="information article-15">
                 <h6>Abonnement</h6>
                 <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Dignissimos, consequatur.</h5>
@@ -242,7 +264,7 @@
                      repellat voluptate laboriosam, adipisci nulla a quia!</p>
             </article>
 
-            <article>
+            <article class="information article-16">
                 <h6>Abonnement</h6>
                 <img src="https://picsum.photos/200/300?grayscale" alt="">
                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, sit?</h5>
@@ -250,15 +272,16 @@
         </section>
 
 
-        <section>
-            <section>
+        <section class="comments">
+            <section class="suggestions">
                 <h5>Anbefallinger</h5>
                 <a href="">Anbefal Artikel</a>
             </section>
 
-            <section>
+            <section class="reviews">
                 <h5>Kommenter</h5>
-                <article>
+
+                <article class="reviews-1 setting">
                     <i class="fa-solid fa-user"></i>
                     <h6>Lorem, ipsum dolor.</h6>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -267,7 +290,8 @@
                          vero id soluta accusantium illum fuga?
                     </p>
                 </article>
-                <article>
+
+                <article class="reviews-2 setting">
                     <i class="fa-solid fa-user"></i>
                     <h6>Lorem, ipsum dolor.</h6>
                     <p>
@@ -289,7 +313,7 @@
                             sunt dolorem atque ea quos. Hic iste in magnam et placeat?
                     </p>
                 </article>
-                <p>Lorem ipsum dolor sit amet consectetur <a href="">adipisicing</a>
+                <p class="links">Lorem ipsum dolor sit amet consectetur <a href="">adipisicing</a>
                      elit. Beatae, <a href="">ad!</a>
                       </p>
             </section>
@@ -298,64 +322,71 @@
 
 
     <footer>
-        <section>
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                 Praesentium, obcaecati.
-            </p>
-            <a href="">Lorem, ipsum dolor.</a>
-            <a href="">Lorem, ipsum dolor.</a>
-            <a href="">Lorem, ipsum dolor.</a>
-        </section>
-
-        <section>
-            <h5>Følg Avisen</h5>
-            <a href="">Lorem, ipsum dolor.</a>
-            <a href="">Lorem, ipsum dolor.</a>
-            <a href="">Lorem, ipsum dolor.</a>
-            <a href="">Lorem, ipsum dolor.</a>
-        </section>
-
-        <section>
-            <aside>
-                <img src="medium.jpg" alt="">
-            </aside>
-            
-            <section>
-                <h5>
-                    Lorem, ipsum dolor.
-                </h5>
-                <form action="">
-                    <input type="text">
-                    <button>Tilmeld</button>
-                </form>
-            </section>
-
-            <section>
-                <h5>Køb Avisen</h5>
-                <a href="">Lorem, ipsum.</a>
-                <a href="">Lorem, ipsum.</a>
-                <a href="">Lorem, ipsum.</a>
-                <a href="">Lorem, ipsum.</a>
-                <a href="">Lorem, ipsum.</a>
-            </section>
-            
-         
-        </section>
-
-        <section>
-            <h5>Om Information</h5>
-            <a href="">Lorem, ipsum.</a>
-            <a href="">Lorem, ipsum.</a>
-            <a href="">Lorem, ipsum.</a>
-            <a href="">Lorem, ipsum.</a>
-            <a href="">Lorem, ipsum.</a>
-            <a href="">Lorem, ipsum.</a>
-            <a href="">Lorem, ipsum.</a>
-        </section>
+        <section class="first-footer">
+            <div class="footer-1">
+                <section >
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Praesentium, obcaecati.
+                    </p>
+                    <a href="">Lorem, ipsum dolor.</a>
+                    <a href="">Lorem, ipsum dolor.</a>
+                    <a href="">Lorem, ipsum dolor.</a>
+                </section>
         
+                <section>
+                    <h5>Følg Avisen</h5>
+                    <a href="">Lorem, ipsum dolor.</a>
+                    <a href="">Lorem, ipsum dolor.</a>
+                    <a href="">Lorem, ipsum dolor.</a>
+                    <a href="">Lorem, ipsum dolor.</a>
+                </section>
+            </div>
+       
 
-        <section>
+            <section class="footer-2">
+                <aside>
+                    <img src="medium.jpg" alt="">
+                </aside>
+                
+                <section class="footer-3">
+                    <h5>
+                        Lorem, ipsum dolor.
+                    </h5>
+                    <form action="">
+                        <input type="text" placeholder="Skriv din mail her">
+                        <button>Tilmeld</button>
+                    </form>
+                    
+                    <section class="footer-4">
+                        <h5>Køb Avisen</h5>
+                        <a href="">Lorem, ipsum.</a>
+                        <a href="">Lorem, ipsum.</a>
+                        <a href="">Lorem, ipsum.</a>
+                        <a href="">Lorem, ipsum.</a>
+                        <a href="">Lorem, ipsum.</a>
+                    </section>
+                </section>
+            </section>  
+
+
+            
+            <section class="footer-5">
+                <h5>Om Information</h5>
+                <a href="">Lorem, ipsum.</a>
+                <a href="">Lorem, ipsum.</a>
+                <a href="">Lorem, ipsum.</a>
+                <a href="">Lorem, ipsum.</a>
+                <a href="">Lorem, ipsum.</a>
+                <a href="">Lorem, ipsum.</a>
+                <a href="">Lorem, ipsum.</a>
+            </section>
+        </section>
+         
+       
+
+
+        <section class="second-footer">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                 Consectetur rem in laudantium natus doloribus, 
                 quisquam harum voluptatibus eos veritatis eius!
